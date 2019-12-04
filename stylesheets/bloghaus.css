@@ -1,0 +1,79 @@
+/*attributes of the body tags*/
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #d8e2ff;
+}
+/*attributes of the page header*/
+
+.header {
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  background: white;
+}
+/*attributes of left column alignment, not used*/
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+/*attributes of right column alignment, not used*/
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+/*attributes for divs on blog page, grey pop outs.*/
+
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+/*attributes of center class*/
+
+.center{
+  float: center;
+  width :25%;
+  padding-left: 20px;
+}
+/*attributes for card effects on blog page*/
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+/*attributes for dynamic content*/
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+/*attributes for link at top of page*/
+.nslinks {
+	width: 100%;
+	margin: 0;
+	border-spacing: 0;
+	padding: 0;
+	background: #d8e2ff;
+	font-size: 94%;
+}

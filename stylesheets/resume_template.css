@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+/*attributes of the body and html tags*/
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+/*attributes of the page tag*/
+.page{
+  border: 5px  #FFD23F:
+  height: 500px;
+  display: grid;
+  font-family: 'Roboto Mono', monospace;
+  justify-content: center;
+}
+/*attributes of the body tag*/
+
+body {
+	color: #000;
+	background: #fff;
+  font-family: 'Roboto Mono', monospace;
+	margin: 0 auto;
+}
+/*attributes of the link tags, links, visited links, hovered links, active links respectively*/
+a:link {
+	text-decoration: underline;
+	color: #00f;
+}
+
+a:visited {
+	text-decoration: underline;
+	color: #60a;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: underline;
+	color: #f00;
+}
+/*attributes of the banner tags with images*/
+
+.banner {
+	margin: 0;
+	padding: 0;
+	background: #94adff;
+	text-align: left;
+}
+
+.banner img {
+	border: none;
+	color: #000;
+	height: 86px;
+	width: 308px;
+	display: block;
+}
+/*attributes of onlycontent*/
+
+.onlycontent {
+	margin: 0 1em;
+}
+/*attributes of the links at the top of the page*/
+/*set up as a table to two columns*/
+/*changes extend for the <li> tags*/
+
+.nslinks {
+	display: table;
+	width: 100%;
+	margin: 0;
+	border-spacing: 0;
+	padding: 0;
+	background: #d8e2ff;
+	font-size: 94%;
+}
+
+.nslinks li {
+	display: table-cell;
+	text-align: center;
+	padding: 0.2em 0.3em 0.3em;
+	vertical-align: middle;
+}
+
+.nslinks li+li {
+	border-left: 2px solid #b1c3ff;
+}
+
+.version {
+	padding: 0;
+	margin: 1.2em auto 0;
+	width: 90%;
+	color: #444;
+	font-size: 160%;
+}
+
+.intro {
+	width: 90%;
+	margin: 1em auto;
+	color: #666;
+}
+/*attributes for the web search box*/
+
+.websearch {
+	margin: 1.5em auto;
+	padding: 1.2em 0.3em;
+	background: #d8e2ff;
+	border: 2px solid #c5d3ff;
+	width: 80%;
+	text-align: center;
+}
+/*attributes of the select tags*/
+
+.select {
+    display: block;
+    margin: 0 auto;
+}
+/*attributes of the input tags, text, submit respectively*/
+
+input[type=text] {
+	border: 2px solid #b6c7ff;
+	background: #f9faff;
+	color: #000;
+	margin: 2px;
+}
+
+input[type=submit] {
+	border: 2px outset #cedaff;
+	color: #000;
+	background: #cedaff;
+	margin: 2px;
+}
+/*attributes of the links, changes extend for <ul> tags*/
+
+.links {
+	display: table;
+	width: 80%;
+	margin: 0 auto 3em;
+	font-size: 94%;
+}
+
+.links ul {
+	display: table-cell;
+	padding-left: 2.5em;
+}
+
+.links ul+ul {
+	padding-left: 1em;
+}
+/*attributes of footer tags*/
+
+.footer {
+	font-style: italic;
+	color: #666;
+	text-align: right;
+}
+
+.footer p {
+	margin-top: 1.5em;
+	padding-top: 0.4em;
+	border-top: 2px solid #94adff;
+}
