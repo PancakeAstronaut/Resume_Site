@@ -1,0 +1,55 @@
+<!DOCTYPE htm">
+<html>
+  <head>
+      <title>Contact: Stephen Hengeli</title>
+  </head>
+  <!--@@BEGIN External File Imports-->
+  <link rel="icon" href="assets/terminal.ico">
+  <style>@import url('stylesheets/resume_template.css');</style>
+  <script type="text/javascript" src="javascript/redirects.js"></script>
+  <script type="text/javascript" src="javascript/whitespace_enforcement.js"></script>
+  <script type="text/javascript" src="javascript/functions.js"></script>
+  <!--@@END External File Imports-->
+  <body>
+    <ul class="nslinks">
+      <li><a href="index.html">Return to Main Page</a></li>
+    </ul>
+    <div class="onlycontent">
+      <h2 class="version" align=center><u>Contact Stephen Hengeli</u></h2>
+
+      <p class="intro">
+      <ul class="nslinks">
+        <li>
+          <p>
+            Hi, I am a university student who develops in my spare time. I currently<br>
+            attend Pennsylvania State University for Information Sciences and Technology.<br>
+            I have a multitude of <a href="personal_projects.html">personal projects</a> that I<br>
+            work on in my spare time. When I am not figuring out API calls, I am writing Graphical <br>
+            representations of the information I work with. I am currently employed as an Intern at <br>
+            Computer Aid, Inc. as a software developer. Feel free to reach out to me if you are interested <br>
+            in speaking about future opportunities.
+          </p><br>
+          <button onclick="showEmailField();">Contact Form</button>
+          </li>
+    </ul>
+    </div>
+    <div id="contactForm" class="onlycontent" style="display:none;">
+      <h2 class="version" align=center><u>Contact Form</u></h2>
+
+      <p class="intro">
+      <ul class="nslinks">
+          <li>
+            <h2 align="center">Who are you? </h2><br>
+            <br><i>Put your email in the box below</i><br>
+            <input onchange="whitespace_email();" name="email" type="text" id="email_box" length=30>
+            <br><i>Put your subject in the box below</i><br>
+            <input onChange="whitespace_subject();" name="subject" type="text" id="subject_box" length=50>
+            <br>
+            <button onClick="check_input();">Send Email</button>    <button onClick="hideEmailField();">Cancel</button>
+
+
+    </ul>
+    </div>
+
+  </body>
+  </html>

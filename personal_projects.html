@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stephen Hengeli</title>
+  </head>
+
+  <!--@@BEGIN External File Imports-->
+  <link rel="icon" href="assets/terminal.ico">
+  <style>@import url('stylesheets/resume_template.css');</style>
+  <script type="text/javascript" src="javascript/redirects.js"></script>
+  <script type="text/javascript" src="javascript/functions.js"></script>
+  <!--@@END External File Imports-->
+  <!--@@BEGIN Local JavaScript-->
+  <script type="text/text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+        hideprojects();
+      });
+  </script>
+  <!--@@END Local JavaScript-->
+
+  <body>
+  <ul class="nslinks">
+      <li><a href="index.html">Return to Main Page</a></li>
+  </ul>
+  <div class="onlycontent">
+      <h2 class="version" align=center><u>Personal Projects</u></h2>
+      <center><h5> <i>Please select a project below to view details</i></h5></center>
+      <p class="intro">
+          <ul class="nslinks">
+              <li>
+            <label>
+                <input type="checkbox" name="projectInfo"
+                       value="MSTV" onclick="showProject('mysql');"> MySQLTerminal_Utility</label>
+            <label>
+                <input type="checkbox" name="projectInfo"
+                       value="ST" onclick="showProject('speechtone');">SpeechTone</label>
+            <label>
+                <input type="checkbox" name="projectInfo"
+                       value="IDB" onclick="showProject('discord');">Interactive Discord Bot</label>
+            <label>
+                <input type="checkbox" name="projectInfo"
+                       value="xlWD" onclick="showProject('xcell');">Various Office 365 Compatibility Apps</label>
+            <label>
+              <input type="checkbox" name="projectInfo"
+                     value="lmsSCPT" onclick="showProject('lms');">Canvas LMS Scripts</label>
+
+      </p>
+
+  </div>
+  <!--The div Tags below are conditional on the checkboxes above-->
+  <!-- Page Specific CSS -->
+  <style>
+    .grid1{
+      border: 5px solid #b1c3ff;
+      display: grid;
+      background-color: #d8e2ff;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 200px 200px;
+    }
+    .one1{
+      background: white;
+      grid-row: 1/3;
+    }
+    .two2{
+      background: white;
+      grid-column: 2/4;
+    }
+    .three3{
+      background: white;
+    }
+    .four4{
+      background: white;
+    }
+  </style>
+  <div class="grid1" id="mysql" style="display:none;">
+    <font color="black">
+    <div class="one1">
+      <h2>Quick Info: MySQLTerminal_Utility</h2>
+    </div>
+    <div class="two2">
+      <strong>Language: </strong><i>Python</i><br>
+      <strong>Description: </strong><i>Provides a quick and simple way to execute data retrieval queries in MySQL</i><br>
+      <strong>Notable Features: </strong><i>Quick setup, supports basic queries up to 50 characters. Also supports views</i><br>
+      <br>
+    </div>
+    <div class="three3">
+      <h2>Packages Used || [pip3 install {package_name}]</h2>
+      <ol>
+      <li><i>json</i></li>
+      <li><i>subprocess</i></li>
+      <li><i>tkinter</i></li>
+      <li><i>mysql</i></li>
+      <li><i>webbrowser</i></li>
+      <ol>
+        <br>
+    </div>
+    <div class="four4">
+      <h2>Application Images</h2>
+      - You can log into any MySQL Database with any credentials<br><br>
+      <img src="assets/mysql_assets/init.png" height="1000" width="1200"><br><br>
+      - You can quickly view tables by simply typing their names<br><br>
+      <img src="assets/mysql_assets/Tables.png" height="1000" width="1200"><br><br>
+    </div>
+</font>
+</div>
+<!--Change nothing witht he div above here-->
+  <div class="grid1" id="speechtone" style="display:none;">
+    <font color="black">
+    <div class="one1">
+      <h2>Quick Info: SpeechTone</h2>
+    </div>
+    <div class="two2">
+      <strong>Language: </strong><i>Python</i><br>
+      <strong>Description: </strong><i>Provides Sentiment and Tone analysis through machine learning and natural language processing</i><br>
+      <strong>Notable Features: </strong><i>Supports Recorded Audio, Spoken Words, and Written Text || Audio Format: .WAV</i><br>
+      <br>
+    </div>
+    <div class="three3">
+      <h2>Packages Used || [pip3 install {package_name}]</h2>
+      <ol>
+      <li><i>json</i></li>
+      <li><i>requests</i></li>
+      <li><i>tkinter</i></li>
+      <li><i>pymsgbox</i></li>
+      <li><i>azure.cognitiveservices.language.textanalytics || TextAnalyticsClient</i></li>
+      <li><i>msrest.authentication || CognitiveServicesCredentials</i></li>
+      <li><i>sys || byteorder</i></li>
+      <li><i>array || array</i></li>
+      <li><i>struct || pack</i></li>
+      <li><i>pyaudio</i></li>
+      <li><i>wave</i></li>
+      <ol>
+        <br>
+    </div>
+    <div class="four4">
+      <h2>Application Images</h2>
+      - You can choose from three different options of analysis<br><br>
+      <img src="assets/speechtone_assets/options.png" height="500" width="400"><br><br>
+      - You can speak directly into your computer<br><br>
+      <img src="assets/speechtone_assets/raw speech.png" height="300" width="600"><br><br>
+      - You can analyze pre recorded audio too<br><br>
+      <img src="assets/speechtone_assets/prerecord.png" height="200" width="600"><br><br>
+      - The output is displayed in the format below<br><br>
+      <img src="assets/speechtone_assets/display.png" height="500" width="400"><br><br>
+
+    </div>
+  </font>
+  </div>
+<!--Change nothing with the div above here-->
+  <div class="grid1" id="discord" style="display:none;">
+      <font color="black">
+      <div class="one1">
+        <h2>Quick Info: Red Leverage Discord Bot</h2>
+      </div>
+      <div class="two2">
+        <strong>Language: </strong><i>Python</i><br>
+        <strong>Description: </strong><i>Keeps track of a users average sentiment polarity in the chat and enforces a profanity filter</i><br>
+        <strong>Notable Features: </strong><i>Various Mini-Games and a Featured Nice Meter</i><br>
+        <br>
+      </div>
+      <div class="three3">
+        <h2>Packages Used || [pip3 install {package_name}]</h2>
+        <ol>
+        <li><i>azure.cognitiveservices.language.textanalytics || TextAnalyticsClient</i></li>
+        <li><i>msrest.authentication || CognitiveServicesCredentials</i></li>
+        <li><i>discord</i></li>
+        <li><i>sqlite3</i></li>
+        <li><i>json</i></li>
+        <li><i>random</i></li>
+        <ol>
+          <br>
+      </div>
+      <div class="four4">
+        <h2>Application Images</h2>
+        - By running '!help' as a message you get a list of commands<br><br>
+        <img src="assets/discord_assets/help.png" height="900" width="500"><br><br>
+        - You can Run '@mentioned_user !nm' to pull a user's average sentiment polarity<br><br>
+        <img src="assets/discord_assets/nicemeter.png" height="300" width="900"><br><br>
+        - You can also run '!joke' for a random joke<br><br>
+        <img src="assets/discord_assets/joke.png" height="200" width="900"><br><br>
+        - There is also a blind maze you can play by running '!maze'<br><br>
+        <img src="assets/discord_assets/maze.png" height="300" width="900"><br><br>
+        - The bot will also reply to you based on the sentiment of what you said<br><br>
+        <img src="assets/discord_assets/response.png" height="200" width="900"><br><br>
+        - The Bot Also has a profanity filter with an offense counter<br><br>
+        <img src="assets/discord_assets/profanity.png" height="200" width="900"><br><br>
+      </div>
+    </font>
+    </div>
+<!--Do not chnage any diva above here-->
+  <div class="grid1" id="xcell" style="display:none;">
+    <font color="black">
+    <div class="one1">
+      <h2>Quick Info: Various Office 365 Compatibility Applications</h2>
+    </div>
+    <div class="two2">
+      <strong>Language: </strong><i>Python</i><br>
+      <strong>Description: </strong><i>Provides a straightforward way to manipulate documents in the Office 365 formats</i><br>
+      <strong>Notable Features: </strong><i>Can read/edit spreadsheets and word documents</i><br>
+      <br>
+    </div>
+    <div class="three3">
+      <h2>Packages Used || [pip3 install {package_name}]</h2>
+      <ol>
+      <li><i>json</i></li>
+      <li><i>tkinter</i></li>
+      <li><i>pymsgbox</i></li>
+      <li><i>openpyxl</i></li>
+      <li><i>os</i></li>
+      <li><i>webbrowser</i></li>
+      <li><i>docx || Document</i></li>
+      <li><i></i></li>
+      <ol>
+        <br>
+    </div>
+    <div class="four4">
+      <h2>Application Images</h2>
+      add photo assets here
+    </div>
+</font>
+</div>
+<!--Do not change any div above here-->
+  <div class="grid1" id="lms" style="display:none;">
+    <font color="black">
+    <div class="one1">
+      <h2>Quick Info: Canvas LMS Scripts</h2>
+    </div>
+    <div class="two2">
+      <strong>Language: </strong><i>Python</i><br>
+      <strong>Description: </strong><i>Provides a quick and simple way interact with the Canvas LMS</i><br>
+      <strong>Notable Features: </strong><i>Can download files, can submit assignments, can view assignment and course details and can view/edit user details</i><br>
+      <br>
+    </div>
+    <div class="three3">
+      <h2>Packages Used || [pip3 install {package_name}]</h2>
+      <ol>
+      <li><i>json</i></li>
+      <li><i>canvasapi || Canvas</i></li>
+      <li><i>json</i></li>
+      <li><i>subprocess</i></li>
+      <ol>
+        <br>
+    </div>
+    <div class="four4">
+      <h2>Application Images</h2>
+      - You have the ability to choose from classes you are enrolled in<br><br>
+      <img src="assets/lms_assets/classchoice.png"><br><br>
+      - You can then list all the files in the course associated with a simple list number<br><br>
+      <img src="assets/lms_assets/filelist.png" height="900" width="900"><br><br>
+      - Once the file is selected and downladed, it is auto moved to a set download folder<br><br>
+      <img src="assets/lms_assets/filedownload.png" height="150" width="900"><br><br>
+    </div>
+</font>
+</div>
+<!--Do not change any div abpove here-->
+
+  </body>
+  </html>

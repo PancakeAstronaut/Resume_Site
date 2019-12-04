@@ -1,0 +1,54 @@
+<!DOCTYPE "html">
+<html lang="en">
+<!--
+Main Page of Personal Resume Site
+Page created for Lab 5, IST-256.001
+-->
+  <head>
+      <title>Stephen Hengeli</title>
+  </head>
+  <!--@@BEGIN External File Imports-->
+  <link rel="icon" href="assets/terminal.ico">
+  <style>@import url('stylesheets/resume_template.css');</style>
+  <script type="text/javascript" src="javascript/redirects.js"></script>
+  <!--@@END External File Imports-->
+
+  <body>
+    <ul class="nslinks">
+      <li><a href="https://github.com/PancakeAstronaut">Find Me on GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/stephen-hengeli-4137b2170/">Find Me on LinkedIn</a></li>
+    </ul>
+
+    <div class="onlycontent">
+      <h2 class="version" align=center>Nice to meet you!<br> I'm, Stephen Hengeli</h2>
+
+      <p class="intro" align=center>Hello! I'm Stephen, Take a look around and feel free<br>
+                                      to reach out if you wish under the <a href="contact_Stephen.html">Contact Stephen</a> link</p>
+
+       <label for="help_options" class="select" align="center">Choose a Navigation Option Below:</label><br>
+     <select class="select" align="center" id='nav_options'>
+               <option value="default">Navigation Options</option>
+               <option value="about">About Stephen</option>
+               <option value="skills">Relevant Skills</option>
+               <option value="persproj">Personal Projects</option>
+               <option value="linkin">LinkedIn</option>
+               <option value="github">GitHub</option>
+               <option value="contactme">Contact Stephen</option>
+               </select><br>
+       <button class="select" onclick="getOption();">Select</button>
+   </div>
+      <form method="get" action="http://www.google.com/search">
+        <div class="websearch">
+          <p>Have a question? Don't go away, Search for it here? Its Google!</p>
+          <input type="text" name="q" size="42" maxlength="255">
+          <br>
+          <input type="submit" value="Search" name="btnG">
+        </div>
+      </form>
+
+      <div class="footer">
+        <p><i>Stephen Hengeli.....The Pennsylvania State University.....2019.....</i></p>
+    </div>
+
+  </body>
+</html>
